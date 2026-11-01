@@ -82,7 +82,7 @@ Both deployments are byte-identical. No constructor args, no owner, no admin.
 
 ## Hosting
 
-GitHub Pages: https://swiftbotlab.github.io/usdc-pay-per-request/ . The Arc Studio workspace export does not include
+GitHub Pages: https://apps.swiftbotlab.workers.dev/usdc-pay-per-request/ . The Arc Studio workspace export does not include
 `dist/`, so `.github/workflows/pages.yml` runs the same Vite build in GitHub Actions on every push to `main` (bun,
 frozen lockfile, `vite build --base=./`). GitHub Pages cannot send response headers: production builds carry a CSP
 meta tag and the app refuses to render inside foreign frames (except the Arc Studio preview).
@@ -176,7 +176,7 @@ the browser; recorded in the walkthrough video):
 - "Send the duplicate anyway": FAILED on-chain with `AlreadyPaid`: [0x35eb0d42...](https://explorer.arc.io/tx/0x35eb0d42897b3879bf636daf36aa89b831acc7a01a549577bfdcfeee8204e60f)
 - Refund Tokyo: [0xe8b655e6...](https://explorer.arc.io/tx/0xe8b655e6a5331f4cb2a8f23f5ffba2500ad33d0c933b57a84122d0604d630ccd); withdraw the credit: [0xa6a198b8...](https://explorer.arc.io/tx/0xa6a198b8f8e56be805f0a62500b8feb71b79d65c30ad761f56e75a73f14b2ed0)
 
-Walkthrough video (2:50): https://github.com/swiftbotlab/usdc-pay-per-request/releases/download/v1.0.0/usdc-pay-per-request-arc-mainnet.mp4
+Walkthrough video (2:50): https://github.com/swiftbotlabs/usdc-pay-per-request/releases/download/v1.0.0/usdc-pay-per-request-arc-mainnet.mp4
 Source verified (exact match) on [explorer.arc.io](https://explorer.arc.io/address/0xe741f95adfa3d68bdb8368734b01ca4575a36119?tab=contract) and [explorer.testnet.arc.io](https://explorer.testnet.arc.io/address/0x830f1801b91f1de0c228cf37ebfc0c211edff991?tab=contract) (via Sourcify).
 
 ## How this repository was built
